@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P&G Ingredients</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="~/images/pg-logo.png" alt="P&G Logo" width="80" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://us.pg.com/brands/">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://us.pg.com/innovation/">Innovation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://us.pg.com/product-safety/">Product Safety</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://us.pg.com/ingredients/">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="https://us.pg.com/environmental-sustainability/">Sustainability</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Find out more</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://us.pg.com/product-safety/">Product Safety</a></li>
+                        <li><a href="https://us.pg.com/brands/">Brands</a></li>
+                        <li><a href="https://us.pg.com/innovation/">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://us.pg.com/who-we-are/">Who We Are</a></li>
+                        <li><a href="https://us.pg.com/pg-history/">P&G History</a></li>
+                        <li><a href="https://us.pg.com/leadership-team/">Leadership Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect with us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://us.pg.com/contact-us/">Contact Us</a></li>
+                        <li><a href="https://www.pgcareers.com/">Careers</a></li>
+                        <li><a href="https://www.pginvestor.com/corporate-profile/default.aspx">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow P&G</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/proctergamble/" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/proctergamble/" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/proctergamble/" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/procter-and-gamble/" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UCDzq6J0KoGCbps96JQuXWRg"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Procter & Gamble</p>
+                    <p>
+                        <a href="https://privacypolicy.pg.com/en-US/#statePrivacyNotice">Privacy Policy</a> |
+                        <a href="https://termsandconditions.pg.com/en-us/">Terms & Conditions</a> |
+                        <a href="https://us.pg.com/sitemap/">Sitemap</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

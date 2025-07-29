@@ -1,0 +1,8 @@
+name: webapplication1
+infra:
+  provider: bicep
+services:
+  WebApplication1:
+    project: WebApplication1
+    host: appservice
+    language: dotnet
